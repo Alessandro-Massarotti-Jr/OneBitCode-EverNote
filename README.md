@@ -31,9 +31,21 @@ Run `npm start`
 
 ### Server
 
-`npm i -g express-generator`
+`npm init -y`
 
-`express --view=no-view server`
+`npm i typescript @types/node ts-node-dev -O`
+
+`npm i express`
+
+`npm i -D @types/express`
+
+`npm i prisma -D npm i @prisma/client npx prisma init`
+
+`npm i cors`
+
+`npm i @types/cors -D`
+
+`npm install dotenv`
 
 
 <br>
