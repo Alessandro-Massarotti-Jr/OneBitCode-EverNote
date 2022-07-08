@@ -6,6 +6,8 @@ export const noteRouter = express.Router();
 
 noteRouter.get("/",authMiddleware.authUser,noteController.index)
 
+noteRouter.get("/search",authMiddleware.authUser,noteController.search);
+
 noteRouter.get("/:noteId",authMiddleware.authUser,noteController.show);
 
 noteRouter.post("/",authMiddleware.authUser,noteController.create);
