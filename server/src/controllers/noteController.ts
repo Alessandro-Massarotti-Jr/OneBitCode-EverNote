@@ -213,6 +213,56 @@ class NoteController{
         }
 
     }
+
+    public async delete(req: Request, res: Response) {
+
+        const noteId = req.params.noteId
+
+        if(!req.body.authUser){
+            const returnAPI = new ReturnAPI(false, "Usuario não autenticado", {})
+            return res.status(401).json(returnAPI);
+        }
+
+        const authUser = req.body.authUser
+
+        try{
+            const deletedNote = await prisma.note.delete({
+                where: {
+                    id:noteId
+                }, 
+                select: {
+                    id: true,
+                    title:true,
+                    body:true,
+                    author:{
+                        select:{
+                            id:true,
+                            name:true,
+                            email:true
+                        }
+                    }
+                
+                },
+            });
+
+            async () => {
+                await prisma.$disconnect();
+            }
+
+            if(!deletedNote){
+                const returnAPI = new ReturnAPI(false, "falha ao deletar", {})
+                return res.status(500).json(returnAPI);
+            }
+            
+            const returnAPI = new ReturnAPI(true, "Nota deletada", deletedNote)
+            return res.status(200).json(returnAPI);
+
+        }catch(err : any){
+            const returnAPI = new ReturnAPI(false, err.message, {})
+            return res.status(500).json(returnAPI);
+        }
+
+    }
 }
 
 export const noteController = new NoteController();

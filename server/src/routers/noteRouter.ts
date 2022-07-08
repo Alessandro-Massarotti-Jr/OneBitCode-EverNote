@@ -4,11 +4,12 @@ import { authMiddleware } from "../middlewares/authmiddleware";
 
 export const noteRouter = express.Router();
 
-
-noteRouter.post("/",authMiddleware.authUser,noteController.create);
+noteRouter.get("/",authMiddleware.authUser,noteController.index)
 
 noteRouter.get("/:noteId",authMiddleware.authUser,noteController.show);
 
-noteRouter.get("/",authMiddleware.authUser,noteController.index)
+noteRouter.post("/",authMiddleware.authUser,noteController.create);
 
 noteRouter.put("/:noteId",authMiddleware.authUser,noteController.update);
+
+noteRouter.delete("/:noteId",authMiddleware.authUser,noteController.delete);
