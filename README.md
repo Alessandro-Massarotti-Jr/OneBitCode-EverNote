@@ -21,7 +21,9 @@ Fill the `.env` file based on `.env.config`
 
 Run `npm install` to download project dependencies.
 
-Run `npm run dev` to start development server
+Run `npm run migrate` to set up database tables.
+
+Run `npm run dev` to start development server.
 
 ## Links uteis
 
