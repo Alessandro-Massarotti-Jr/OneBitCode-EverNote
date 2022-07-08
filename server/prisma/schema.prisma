@@ -12,8 +12,8 @@ model Note {
   id String @id @default(uuid())
   title String
   body String
-  author User @relation(fields: [authorId], references: [id])
   authorId String
+  author User @relation(name: "NoteAuthor", fields: [authorId], references: [id])
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }
@@ -23,7 +23,7 @@ model User{
      name String
      email String @unique
      password String
-     notes Note[]
+     notes Note[] @relation(name:"NoteAuthor")
      createdAt DateTime @default(now())
      updatedAt DateTime @updatedAt
 }
