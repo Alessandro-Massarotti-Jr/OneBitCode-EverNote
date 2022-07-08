@@ -10,3 +10,5 @@ noteRouter.get("/", async (req, res) => {
 })
 
 noteRouter.post("/",authMiddleware.authUser,noteController.create)
+
+noteRouter.get("/:noteId",authMiddleware.authUser,noteController.show)

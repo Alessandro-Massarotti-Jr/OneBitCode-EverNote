@@ -95,7 +95,11 @@ class UserController {
 
 
                 const jwt_token = jwt.sign({
-                    id: userResult!.id,
+                   
+                        id: userResult!.id,
+                        email: userResult!.email,
+                        name: userResult!.name
+                      
                 }, jwt_secret as Secret)
 
                 async () => {
