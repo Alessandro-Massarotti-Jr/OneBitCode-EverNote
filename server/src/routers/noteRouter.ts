@@ -10,3 +10,5 @@ noteRouter.post("/",authMiddleware.authUser,noteController.create);
 noteRouter.get("/:noteId",authMiddleware.authUser,noteController.show);
 
 noteRouter.get("/",authMiddleware.authUser,noteController.index)
+
+noteRouter.put("/:noteId",authMiddleware.authUser,noteController.update);
