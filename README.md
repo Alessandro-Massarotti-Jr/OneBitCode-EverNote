@@ -17,7 +17,7 @@ Projeto final do curso fullstack javascript OneBitCode
 
 ### Server
 
-Fill the `.env` file based on `.env.config`
+Fill the `.env` file based on `.env.example`
 
 Run `npm install` to download project dependencies.
 
