@@ -27,6 +27,12 @@ Run `npm run dev` to start development server.
 
 ## Links uteis
 
+- [prisma](https://www.prisma.io/docs/reference)
+
+- [typescript](https://www.typescriptlang.org/docs/handbook/intro.html)
+
+- [express](https://expressjs.com/pt-br/)
+
 ## Demonstração
 
 ## Comandos utilizados
