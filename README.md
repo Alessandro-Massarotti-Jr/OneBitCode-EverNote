@@ -1,9 +1,9 @@
 # One Bit Code
 
 <p>
-  <img src="https://img.shields.io/badge/made%20by-Alessandro%20Massarotti%20Jr-e00000?style=flat-square">
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/alessandro-massarotti-Jr/OneBitCode-EverNote?color=e00000&style=flat-square">
-  <img alt="GitHub Top Language" src="https://img.shields.io/github/languages/top/alessandro-massarotti-Jr/OneBitCode-EverNote?color=e00000&style=flat-square">
+  <img src="https://img.shields.io/badge/made%20by-Alessandro%20Massarotti%20Jr-624fd2?style=flat-square">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/alessandro-massarotti-Jr/OneBitCode-EverNote?color=624fd2&style=flat-square">
+  <img alt="GitHub Top Language" src="https://img.shields.io/github/languages/top/alessandro-massarotti-Jr/OneBitCode-EverNote?color=624fd2&style=flat-square">
 </p>
 
 
@@ -14,6 +14,10 @@ Projeto final do curso fullstack javascript OneBitCode
 ## Config
 
 ### Client
+
+Run `npm install` to download project dependencies.
+
+Run `npm run dev` to start development server.
 
 ### Server
 
@@ -27,17 +31,42 @@ Run `npm run dev` to start development server.
 
 ## Links uteis
 
-- [prisma](https://www.prisma.io/docs/reference)
+- [Prisma](https://www.prisma.io/docs/reference)
 
-- [typescript](https://www.typescriptlang.org/docs/handbook/intro.html)
+- [Typescript](https://www.typescriptlang.org/docs/handbook/intro.html)
 
-- [express](https://expressjs.com/pt-br/)
+- [Express](https://expressjs.com/pt-br/)
 
+- [Vite](https://vitejs.dev/)
+
+- [Tailwind](https://tailwindcss.com/docs/installation)
+
+- [React Router Dom](https://reactrouter.com/)
+
+- [Axios](https://axios-http.com/ptbr/docs/intro)
+
+- [Moment](https://momentjs.com/)
 ## Demonstração
 
 ## Comandos utilizados
 
 ### Client
+
+`npm create vite@latest`
+
+`npm install -D tailwindcss postcss autoprefixer`
+
+`npx tailwindcss init -p`
+
+`npm instal react-router-dom`
+
+`npm install axios`
+
+`npm install moment`
+
+`npm instal @types/react-router-dom`
+
+`npm install @types/axios`
 
 ### Server
 
