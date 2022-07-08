@@ -45,9 +45,19 @@ Run `npm run dev` to start development server
 
 `npm i cors`
 
+`npm install dotenv`
+
+`npm install bcrypt`
+
+`npm install jsonwebtoken`
+
 `npm i @types/cors -D`
 
-`npm install dotenv`
+`npm i @types/bcrypt -D`
+
+`npm install @types/jsonwebtoken -D`
+
+`npm i @types/dotenv -D`
 
 
 <br>
