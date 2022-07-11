@@ -7,7 +7,7 @@
 </p>
 
 
-Projeto final do curso fullstack javascript OneBitCode
+Projeto final do curso fullstack javascript OneBitCode com algumas melhorias/alterações
 
 ## Sumario
 
