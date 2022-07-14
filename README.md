@@ -43,6 +43,8 @@ Run `npm run dev` to start development server.
 
 - [React Router Dom](https://reactrouter.com/)
 
+- [React icons](https://react-icons.github.io/react-icons/)
+
 - [Axios](https://axios-http.com/ptbr/docs/intro)
 
 - [Moment](https://momentjs.com/)
@@ -64,9 +66,13 @@ Run `npm run dev` to start development server.
 
 `npm install moment`
 
+`npm install react-icons`
+
 `npm instal @types/react-router-dom`
 
 `npm install @types/axios`
+
+`npm i @types/react-icons`
 
 ### Server
 
