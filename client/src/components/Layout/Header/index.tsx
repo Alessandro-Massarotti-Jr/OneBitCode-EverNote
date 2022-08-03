@@ -35,10 +35,10 @@ export default function Header() {
             <nav className={`${navbar ? 'flex' : 'hidden'} min-w-full md:min-w-0 md:flex `}>
                 <ul className="py-2 flex flex-col items-start md:flex-row md:items-center">
                     <li className="w-full my-2">
-                        <Link to="/register" className="text-custom-400 py-2 px-4 mx-2 my-2 md:mt-0 transition-colors hover:text-custom-600 transition-colors font-bold" replace={true}>Register</Link>
+                        <Link to="/register" className="text-custom-400 py-2 px-4 mx-2 my-2 md:mt-0 transition-colors hover:text-custom-600 font-bold" replace={true}>Register</Link>
                     </li>
                     <li className="w-full my-2">
-                        <Link to="/login" className="text-custom-400 font-bold py-2 px-4 mx-2 my-2 md:mt-0 transition-colors border border-custom-400 rounded-md hover:bg-custom-400 hover:text-white transition-colors cursor-pointer" replace={true}>Login</Link>
+                        <Link to="/login" className="text-custom-400 font-bold py-2 px-4 mx-2 my-2 md:mt-0 transition-colors border border-custom-400 rounded-md hover:bg-custom-400 hover:text-white cursor-pointer" replace={true}>Login</Link>
                     </li>
                 </ul>
             </nav>
