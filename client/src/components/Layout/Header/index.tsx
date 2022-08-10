@@ -31,7 +31,7 @@ export default function Header() {
 
             <header className=" flex px-2 py-4 items-center justify-between border-b border-black bg-custom-400">
                 <div className="flex justify-between items-center md:min-w-0">
-                    <Link to='/' replace={true}>
+                    <Link to='/notes' replace={true}>
                         <img className=" h-10" src={LogoBranca} alt="Logo" />
                     </Link>
 
