@@ -19,14 +19,19 @@ class UserService {
             name: name,
             email: email,
             password: password
-        })
+        });
     }
     async login({ email, password }: LoginProps) {
         const response = await api.post('/users/login', {
             email: email,
             password: password
         })   
-        localStorage.setItem("access_token",response.data.data.token)
+        localStorage.setItem("access_token",response.data.data.token);
+        localStorage.setItem("user",JSON.stringify({name:response.data.data.name,email:response.data.data.email}));
+    }
+    logout(){
+        localStorage.removeItem("access_token");
+        localStorage.removeItem("user");
     }
 }
 
