@@ -12,6 +12,8 @@ export default function Header() {
     const [navbar, setNavbar] = useState(false);
     const navigate = useNavigate();
 
+    const user = JSON.parse(localStorage.getItem('user') as string);
+
     function handlerNavbarOpen() {
         if (navbar) {
             setNavbar(false);
@@ -39,7 +41,7 @@ export default function Header() {
 
                 <div className="relative">
                     <span onClick={handlerNavbarOpen} className="border border-white text-white p-2 rounded-sm cursor-pointer hover:bg-white hover:text-zinc-900 transition-colors">
-                        Leonardo
+                        {user.name}
                     </span>
                     <ul className={`${navbar ? '' : 'hidden'} absolute top-9 bg-white w-full border border-custom-400`}>
                         <li className="p-2 border-b-2 border-custom-400 text-custom-400">
