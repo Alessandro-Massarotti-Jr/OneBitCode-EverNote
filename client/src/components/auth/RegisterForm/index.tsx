@@ -3,26 +3,32 @@ import { Link } from "react-router-dom";
 import UserService from "../../../services/UserService";
 import InputText from "../../Form/InputText";
 import {useNavigate} from "react-router-dom"
+import Loading from "../../Layout/Loading";
 
 export default function RegisterForm(){
     const [name,setName] = useState('');
     const [email,setEmail] = useState('');
     const [password,setPassword] = useState('');
 
+    const [isFormLoading,setIsFormLoading] = useState(false);
+
     const navigate = useNavigate();
 
     function handleFormSubmit(event:React.SyntheticEvent){
       event.preventDefault();
+      setIsFormLoading(true);
       try{
         UserService.register({name:name,email:email,password:password})
         navigate('/login',{replace:true})
       }catch(error){
        console.log(error);   
       } 
+      setIsFormLoading(false);
     }
 
     return(
         <form onSubmit={(event)=>{handleFormSubmit(event)}} className="flex flex-col items-center justify-center text-zinc-600" action="">
+          {isFormLoading && <Loading/>}
             <InputText value={name} changeValue={setName} name="Name" type="text" required={true}/>
             <InputText value={email} changeValue={setEmail} name="Email" type="email" required={true}/>
             <InputText value={password} changeValue={setPassword} name="Password" type="password" required={true}/>
