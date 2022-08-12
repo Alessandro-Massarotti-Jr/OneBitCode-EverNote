@@ -27,7 +27,7 @@ class UserService {
             password: password
         })   
         localStorage.setItem("access_token",response.data.data.token);
-        localStorage.setItem("user",JSON.stringify({name:response.data.data.name,email:response.data.data.email}));
+        localStorage.setItem("user",JSON.stringify({id:response.data.data.id,name:response.data.data.name,email:response.data.data.email}));
     }
     logout(){
         localStorage.removeItem("access_token");
