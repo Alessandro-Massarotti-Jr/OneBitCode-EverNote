@@ -9,6 +9,12 @@
 
 Projeto final do curso fullstack javascript OneBitCode com algumas melhorias/alterações
 
+<div style="display:flex;" align="center">
+  <img width="35%" src="/images/jsNotes.png" alt="jsNotes">
+  <img width="20%" src="/images/jsNotesMobile.png" alt="jsNotesMobile">
+  <img width="35%" src="/images/jsNotesLoginForm.png" alt="jsNotesLoginForm">
+</div>
+
 ## Sumario
 
 ## Config
