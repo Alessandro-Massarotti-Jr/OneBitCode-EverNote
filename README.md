@@ -9,6 +9,8 @@
 
 Projeto final do curso fullstack javascript OneBitCode com algumas melhorias/alterações
 
+O projeto possui uma API desenvolvida em Node.js com typescript utilizando o express para fazer a gestão das rotas, e o front-end desenvolvito em react utilizando o typescript, vite e tailwind
+
 <div style="display:flex;" align="center">
   <img width="100%" src="/images/jsNotes.png" alt="jsNotes">
 </div>
