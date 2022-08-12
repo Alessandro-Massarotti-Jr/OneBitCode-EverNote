@@ -15,6 +15,14 @@ Projeto final do curso fullstack javascript OneBitCode com algumas melhorias/alt
 
 ## Sumario
 
+ - [Config](#config)
+   - [Client](#client)
+   - [server](#server)
+ - [Links uteis](#links-uteis)
+ - [Comandos utilizados](#comandos-utilizados)
+   - [Client](#client-1)
+   - [server](#server-1)
+
 ## Config
 
 ### Client
@@ -52,7 +60,6 @@ Run `npm run dev` to start development server.
 - [Axios](https://axios-http.com/ptbr/docs/intro)
 
 - [Moment](https://momentjs.com/)
-## Demonstração
 
 ## Comandos utilizados
 
